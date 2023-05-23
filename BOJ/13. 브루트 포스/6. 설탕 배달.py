@@ -6,7 +6,7 @@ k = N // 5
 
 if k == 0:
     print(-1)
-    break
+    
 else:
     for i in range(k + 1):
         if (N - 5 * (k - i)) % 3 == 0:

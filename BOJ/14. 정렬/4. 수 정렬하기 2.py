@@ -1,10 +1,12 @@
+import sys
+
 N = int(input())
 list = []
 for _ in range (N):
-    A = int(input())
+    A = int(sys.stdin.readline())
     list.append(A)
 
 list.sort()
 
-for i in range (len(list)):
-    print(list[i])
+for i in list:
+    print(i)

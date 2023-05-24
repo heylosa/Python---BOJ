@@ -4,11 +4,16 @@ N = int(input())
 k = N // 5
 
 
-if k == 0:
+if k == 0 and N != 3:
     print(-1)
-    
+
+
 else:
     for i in range(k + 1):
         if (N - 5 * (k - i)) % 3 == 0:
             print((k - i) + ((N - 5 * (k - i)) // 3))
+            break
+
+        elif N == 3:
+            print(1)
             break

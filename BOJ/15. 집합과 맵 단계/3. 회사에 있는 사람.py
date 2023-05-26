@@ -1,5 +1,15 @@
 import sys
 n = int(input())
-lst = []
+name_lst = {}
 for i in range (n):
-    lst.append(sys.stdin.readline().split())
+    a,b = map(str,sys.stdin.readline().split())
+
+    if b == "enter":
+        name_lst[a] = b
+    else:
+        del name_lst[a]
+
+name_lst = sorted(name_lst, reverse= True)
+
+for j in name_lst:
+    print(j)

@@ -15,5 +15,6 @@ for _ in range (m):
     else:
         print(poket_name[a]+1)
 
+
 # isdigit : int를 판별하는 함수 / 숫자 판단하는 함수
 # C++의 경우 <cctype>

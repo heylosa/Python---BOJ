@@ -1,15 +1,7 @@
-for N in range (1, 5001):
-    k = N // 5
+N = int(input())
+A = set(map(int, input().split()))
+M = int(input())
+lst = list(map(int, input().split()))
 
-    if k == 0:
-        print(-1)
-
-    elif k > 0:
-        for i in range(k + 1):
-            M = N - 5*(k-i)
-            if M % 3 == 0:
-                print((k-i) + ((M) // 3))
-                break
-            elif i == k:
-                if M % 3 > 0:
-                    print(-1)
+for num in lst:
+    print(1) if num in A else print(0)

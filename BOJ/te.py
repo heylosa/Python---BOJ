@@ -6,3 +6,4 @@ if A > 0:
         N *= (i+1)
 print(N)
 
+d

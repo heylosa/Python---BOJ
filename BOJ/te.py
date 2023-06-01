@@ -1,7 +1,8 @@
-N = int(input())
-A = set(map(int, input().split()))
-M = int(input())
-lst = list(map(int, input().split()))
+A = int(input())
+N = 1
 
-for num in lst:
-    print(1) if num in A else print(0)
+if A > 0:
+    for i in range (A):
+        N *= (i+1)
+print(N)
+

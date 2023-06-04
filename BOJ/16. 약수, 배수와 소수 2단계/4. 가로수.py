@@ -1,3 +1,5 @@
+#다시보기
+
 import math
 import sys
 from math import gcd

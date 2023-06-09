@@ -1,15 +1,20 @@
 import sys
-T = int(input())
+N=int(sys.stdin.readline())
 
-for i in range (T):
-    A = int(sys.stdin.readline())
-    B = 0
-    err = 0
+def ch(x):
+    for i in range(2,int(x**0.5)+1):
+        if x%i==0:
+            return False
+    return True
+
+for _ in range(N):
+    i=int(sys.stdin.readline())
     while True:
-        B = A
-        B += 1
-        if A % B == 0:
-            print(A)
-            err += 1
+        if i==0 or i==1:
+            print(2)
             break
-
+        if ch(i):
+            print(i)
+            break
+        else:
+            i+=1

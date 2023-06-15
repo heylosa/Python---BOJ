@@ -14,8 +14,6 @@ for _ in range (N):
 
 print(len(dance))
 
-
-
 # 아래는 해시로 푸는 문제풀이 방법
 
 # 파이썬에는 collections 모듈에 defaultdict 함수가 있다. 이는 모든 해시에 대해 디폴트값을 지정해주는 함수이다.

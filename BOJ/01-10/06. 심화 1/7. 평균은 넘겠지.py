@@ -7,3 +7,7 @@ for _ in range (C):
     above_average = len([b for b in all[1:] if b > average])
     percent = above_average / all[0] * 100
     print(f"{percent:.3f}%")
+
+
+import sys
+T = int(input())
